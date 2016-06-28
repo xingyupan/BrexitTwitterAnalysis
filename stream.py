@@ -3,10 +3,10 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 
 #Variables that contains the user credentials to access Twitter API 
-access_token = "35183885-MjolEbYE3GeGg4MX3c0hoRr6qtVrz6W6C4nITAgyj"
-access_token_secret = "hhV1IcNUqXZ9Ll8QuKbDlztgcqxodkaItSMSBxho4GwL7"
-consumer_key = "nduGFFaH20iTnRhgTvw4D9QVF"
-consumer_secret = "Ne8WlXy2Dv2mtveERmAYL2oVij4VBPWptxng6UvAORoCNo45CR"
+access_token = 'YOUR TOKEN'
+access_token_secret = "YOUR TOKEN Secret"
+consumer_key = "YOUR consumer Key"
+consumer_secret = "YOUR consumer key secret"
 
 
 #This is a basic listener that just prints received tweets to stdout.
@@ -29,4 +29,4 @@ if __name__ == '__main__':
     stream = Stream(auth, l)
 
     #This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
-    stream.filter(track=['EURef', 'brexit', 'voteleave','votestay'])
+    stream.filter(track=['EURef', 'brexit'])
